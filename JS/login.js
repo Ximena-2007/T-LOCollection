@@ -1,4 +1,4 @@
-document.getElementById('btnLogin').addEventListener('click', () => {
+document.getElementById('btnLogin').addEventListener('click', (e) => {
   const email = document.getElementById('email').value;
   const password = document.getElementById('contraseña').value;
 
@@ -21,5 +21,6 @@ document.getElementById('btnLogin').addEventListener('click', () => {
   }
 
   alert('Login exitoso');
-  window.location.href = 'catalogo.html';
+  localStorage.setItem('usuarioActivo', JSON.stringify(usuario));
+  window.location.href = "index.html";
 });

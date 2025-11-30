@@ -24,9 +24,21 @@ document.getElementById('btnRegistro').addEventListener('click', () => {
 
     const nuevoUsuario = new Usuario(nombre, apellido, correo, direccion, ciudad, password);
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-    usuarios.push(nuevoUsuario);
-    localStorage.setItem('usuarios', JSON.stringify(usuarios));
-
-    alert('¡Registro exitoso!');
-    document.getElementById('formRegistro').reset();
+    let existeCorreo = false;
+    usuarios.forEach(u => {
+        if (u.correo === correo) {
+            existeCorreo = true;
+        }
+    });
+    if (!existeCorreo) {
+        usuarios.push(nuevoUsuario);
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
+        localStorage.setItem('usuarioActivo', JSON.stringify(nuevoUsuario));
+        alert('¡Registro exitoso!');
+        document.getElementById('formRegistro').reset();
+        window.location.href = "index.html";
+    } else {
+        alert('Este usuario ya ha sido registrado');
+        return;
+    }
 });

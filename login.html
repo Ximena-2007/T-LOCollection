@@ -28,7 +28,8 @@
             <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
                 <div class="d-flex align-items-center gap-4 icon-menu mt-3 mt-lg-0">
 
-                    <a href="catalogoMujer.html" class="text-dark"><i class="bi bi-search"></i></a> <!-- buscador (fer) -->
+                    <a href="catalogoMujer.html" class="text-dark"><i class="bi bi-search"></i></a>
+                    <!-- buscador (fer) -->
 
                     <a href="favoritos.html" class="text-dark" title="Mis Favoritos"><i class="bi bi-heart"></i></a>
                     <!-- favoritos (Dany) -->
@@ -36,10 +37,9 @@
                     <a href="login.html" class="text-dark" title="Iniciar Sesión"><i class="bi bi-person"></i></a>
                     <!-- login (Ximena) -->
 
-                    <a href="carrito.html" class="text-dark position-relative" title="Carrito"> <!-- carrito (Dany) -->
+                    <a href="carrito.html" class="text-dark position-relative" title="Carrito" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"> <!-- carrito (Dany) -->
                         <i class="bi bi-bag"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                            style="font-size: 0.5rem;">0</span>
                     </a>
 
                 </div>
@@ -98,6 +98,30 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal carrito-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="contenedorCarrito" class="row"></div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-between w-100">
+                        <p class="text-black mb-0 px-2">TOTAL</p>
+                        <p class="text-black mb-0 px-2" id="total">$0.00</p>
+                    </div>
+                    <button type="button" class="btn btn-dark w-100 rounded-0 fw-bold" data-bs-dismiss="modal">Ir a
+                        pagar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- footer -->
     <footer class="bg-black text-white py-5 mt-5">
         <div class="container">
@@ -130,14 +154,15 @@
                 </div>
 
             </div>
-            s
             <div class="border-top border-secondary mt-5 pt-4 text-center">
                 <small class="text-secondary">&copy; 2025 T-LO Collection.</small>
             </div>
 
         </div>
     </footer>
-<script src="js/login.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T-LO Collection | Inicio</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
@@ -12,7 +13,7 @@
 
     <!--modal -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var myModal = new bootstrap.Modal(document.getElementById('modalSuscripcion'));
             myModal.show();
         });
@@ -29,7 +30,7 @@
     <!-- navbar-->
     <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm py-3">
         <div class="container-fluid px-4">
-            
+
             <!-- logo -->
             <a class="navbar-brand" href="index.html">
                 <img src="images/LogoTLO.png" alt="T-LO Collection" height="40">
@@ -41,16 +42,19 @@
             <!-- iconos-->
             <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
                 <div class="d-flex align-items-center gap-4 icon-menu mt-3 mt-lg-0">
-                    
-                   <a href="catalogoMujer.html" class="text-dark"><i class="bi bi-search"></i></a> <!-- buscador (fer) -->
-                    
-                    <a href="favoritos.html" class="text-dark" title="Mis Favoritos"><i class="bi bi-heart"></i></a> <!-- favoritos (Dany) -->
-                    
-                    <a href="login.html" class="text-dark" title="Iniciar Sesión"><i class="bi bi-person"></i></a> <!-- login (Ximena) -->
-                    
-                    <a href="carrito.html" class="text-dark position-relative" title="Carrito"> <!-- carrito (Dany) -->
+
+                    <a href="catalogoMujer.html" class="text-dark"><i class="bi bi-search"></i></a>
+                    <!-- buscador (fer) -->
+
+                    <a href="favoritos.html" class="text-dark" title="Mis Favoritos"><i class="bi bi-heart"></i></a>
+                    <!-- favoritos (Dany) -->
+
+                    <a href="login.html" class="text-dark" title="Iniciar Sesión"><i class="bi bi-person"></i></a>
+                    <!-- login (Ximena) -->
+
+                    <a href="carrito.html" class="text-dark position-relative" title="Carrito" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"> <!-- carrito (Dany) -->
                         <i class="bi bi-bag"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.5rem;">0</span>
                     </a>
 
                 </div>
@@ -98,11 +102,13 @@
                 </div>
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
                 <span class="visually-hidden">Siguiente</span>
             </button>
@@ -118,16 +124,18 @@
                 <div class="separator mx-auto"></div>
             </div>
         </div>
-        
+
         <div class="row g-4">
 
             <!-- mujer -->
             <div class="col-md-4">
                 <div class="card border-0 text-white card-hover overflow-hidden">
                     <img src="images/categoria_mujer.jpg" class="card-img" alt="Moda Mujer">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center bg-dark-gradient">
+                    <div
+                        class="card-img-overlay d-flex flex-column justify-content-end align-items-center bg-dark-gradient">
                         <h4 class="card-title text-uppercase fw-bold">Mujer</h4>
-                        <a href="catalogoMujer.html" class="btn btn-outline-light mt-2 stretched-link rounded-0">Ver Catálogo</a>
+                        <a href="catalogoMujer.html" class="btn btn-outline-light mt-2 stretched-link rounded-0">Ver
+                            Catálogo</a>
                     </div>
                 </div>
             </div>
@@ -136,9 +144,11 @@
             <div class="col-md-4">
                 <div class="card border-0 text-white card-hover overflow-hidden">
                     <img src="images/categoria_hombre.jpg" class="card-img" alt="Moda Hombre">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center bg-dark-gradient">
+                    <div
+                        class="card-img-overlay d-flex flex-column justify-content-end align-items-center bg-dark-gradient">
                         <h4 class="card-title text-uppercase fw-bold">Hombre</h4>
-                        <a href="catalogoHombre.html" class="btn btn-outline-light mt-2 stretched-link rounded-0">Ver Catálogo</a>
+                        <a href="catalogoHombre.html" class="btn btn-outline-light mt-2 stretched-link rounded-0">Ver
+                            Catálogo</a>
                     </div>
                 </div>
             </div>
@@ -147,9 +157,11 @@
             <div class="col-md-4">
                 <div class="card border-0 text-white card-hover overflow-hidden">
                     <img src="images/categoria_accesorios.jpg" class="card-img" alt="Accesorios">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center bg-dark-gradient">
+                    <div
+                        class="card-img-overlay d-flex flex-column justify-content-end align-items-center bg-dark-gradient">
                         <h4 class="card-title text-uppercase fw-bold">Accesorios</h4>
-                        <a href="catalogoAccesorios.html" class="btn btn-outline-light mt-2 stretched-link rounded-0">Ver Catálogo</a>
+                        <a href="catalogoAccesorios.html"
+                            class="btn btn-outline-light mt-2 stretched-link rounded-0">Ver Catálogo</a>
                     </div>
                 </div>
             </div>
@@ -158,7 +170,7 @@
     </section>
 
     <!-- banner de enmedio -->
-    <section id="zona2" class="contenido parallax-section d-flex align-items-center justify-content-start ps-lg-5" 
+    <section id="zona2" class="contenido parallax-section d-flex align-items-center justify-content-start ps-lg-5"
         style="background-image: url('images/Cards.jpg');">
 
         <div class="container">
@@ -174,7 +186,7 @@
     <section class="container my-5 py-5">
         <h2 class="text-center fw-bold mb-2">LO MÁS VENDIDO</h2>
         <p class="text-center text-muted mb-5">Favoritos de la temporada</p>
-        
+
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
 
             <!-- producto 1 -->
@@ -238,12 +250,14 @@
                         <div class="col-md-6 p-5 d-flex flex-column justify-content-center text-center">
                             <h3 class="fw-bold mb-2">ÚNETE A LA FAMILIA T-LO</h3>
                             <p class="text-secondary mb-4 small">Obtén 10% de descuento en tu primera compra.</p>
-                            
+
                             <form>
                                 <div class="mb-3">
-                                    <input type="email" class="form-control rounded-0 py-2" placeholder="Tu correo electrónico">
+                                    <input type="email" class="form-control rounded-0 py-2"
+                                        placeholder="Tu correo electrónico">
                                 </div>
-                                <button type="button" class="btn btn-dark w-100 rounded-0 py-2 fw-bold" data-bs-dismiss="modal">ENVIAR</button>
+                                <button type="button" class="btn btn-dark w-100 rounded-0 py-2 fw-bold"
+                                    data-bs-dismiss="modal">ENVIAR</button>
                             </form>
 
                             <p class="mt-3 text-muted" style="font-size: 0.6rem;">
@@ -251,11 +265,36 @@
                             </p>
                         </div>
                         <div class="col-md-6 position-relative">
-                            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
-                            <img src="images/categoria_accesorios.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Join the Club">
+                            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                data-bs-dismiss="modal"></button>
+                            <img src="images/categoria_accesorios.jpg" class="img-fluid w-100 h-100 object-fit-cover"
+                                alt="Join the Club">
                         </div>
 
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal carrito-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="contenedorCarrito" class="row"></div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-between w-100">
+                        <p class="text-black mb-0 px-2">TOTAL</p>
+                        <p class="text-black mb-0 px-2" id="total">$0.00</p>
+                    </div>
+                    <button type="button" class="btn btn-dark w-100 rounded-0 fw-bold" data-bs-dismiss="modal">Ir a
+                        pagar</button>
                 </div>
             </div>
         </div>
@@ -293,13 +332,14 @@
                 </div>
 
             </div>
-s
             <div class="border-top border-secondary mt-5 pt-4 text-center">
                 <small class="text-secondary">&copy; 2025 T-LO Collection.</small>
             </div>
 
         </div>
     </footer>
-
+    <script src="js/favoritos.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
+
 </html>

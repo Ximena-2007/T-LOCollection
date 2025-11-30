@@ -17,8 +17,8 @@ function mostrarRelojesH(relojH) {
                 <div class="card-body">
                     <h5 class="card-title">${rh.title.substring(0, 15)}</h5>
                     <p class="card-text">$${rh.price}</p>
-                    <a href="#" class="btn btn-dark btnCarrito">Agregar a carrito</a>
-                    <button class="btnFavorito" type="button">
+                    <a href="#" class="btn btn-dark" onclick="agregarCarrito('${rh.title}',${rh.price},'${rh.images[0]}')">Agregar a carrito</a>
+                    <button onclick="agregarFavorito('${rh.title}',${rh.price},'${rh.images[0]}')" type="button">
                     <i class="bi bi-heart"></i>
                     </button>
                 </div>
@@ -47,8 +47,8 @@ function mostrarRelojesM(relojM) {
                 <div class="card-body">
                     <h5 class="card-title">${rm.title.substring(0, 15)}</h5>
                     <p class="card-text">$${rm.price}</p>
-                    <a href="#" class="btn btn-dark btnCarrito">Agregar a carrito</a>
-                    <button class="btnFavorito" type="button">
+                    <a href="#" class="btn btn-dark" onclick="agregarCarrito('${rm.title}',${rm.price},'${rm.images[0]}')">Agregar a carrito</a>
+                    <button onclick="agregarFavorito('${rm.title}',${rm.price},'${rm.images[0]}')" type="button">
                     <i class="bi bi-heart"></i>
                     </button>
                 </div>
@@ -77,8 +77,8 @@ function mostrarGafas(gafas) {
                 <div class="card-body">
                     <h5 class="card-title">${gaf.title.substring(0, 15)}</h5>
                     <p class="card-text">$${gaf.price}</p>
-                    <a href="#" class="btn btn-dark btnCarrito">Agregar a carrito</a>
-                    <button class="btnFavorito" type="button">
+                      <a href="#" class="btn btn-dark" onclick="agregarCarrito('${gaf.title}',${gaf.price},'${gaf.images[0]}')">Agregar a carrito</a>
+                    <button onclick="agregarFavorito('${gaf.title}',${gaf.price},'${gaf.images[0]}')" type="button">
                     <i class="bi bi-heart"></i>
                     </button>
                 </div>
@@ -108,8 +108,8 @@ function mostrarJoyas(joyas) {
                 <div class="card-body">
                     <h5 class="card-title">${joy.title.substring(0, 15)}</h5>
                     <p class="card-text">$${joy.price}</p>
-                    <a href="#" class="btn btn-dark btnCarrito">Agregar a carrito</a>
-                    <button class="btnFavorito" type="button">
+                   <a href="#" class="btn btn-dark" onclick="agregarCarrito('${joy.title}',${joy.price},'${joy.images[0]}')">Agregar a carrito</a>
+                    <button onclick="agregarFavorito('${joy.title}',${joy.price},'${joy.images[0]}')" type="button">
                     <i class="bi bi-heart"></i>
                     </button>
                 </div>

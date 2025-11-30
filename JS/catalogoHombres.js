@@ -17,8 +17,8 @@ function mostrarCamisas(camisas) {
                 <div class="card-body">
                     <h5 class="card-title">${cam.title.substring(0, 15)}</h5>
                     <p class="card-text">$${cam.price}</p>
-                    <a href="#" class="btn btn-dark btnCarrito">Agregar a carrito</a>
-                    <button class="btnFavorito" type="button">
+                    <a href="#" class="btn btn-dark" onclick="agregarCarrito('${cam.title}',${cam.price},'${cam.images[0]}')">Agregar a carrito</a>
+                    <button onclick="agregarFavorito('${cam.title}',${cam.price},'${cam.images[0]}')" type="button">
                     <i class="bi bi-heart"></i>
                     </button>
                 </div>
@@ -47,8 +47,8 @@ function mostrarZapatos(zapatos) {
                 <div class="card-body">
                     <h5 class="card-title">${zap.title.substring(0, 15)}</h5>
                     <p class="card-text">$${zap.price}</p>
-                    <a href="#" class="btn btn-dark btnCarrito">Agregar a carrito</a>
-                    <button class="btnFavorito" type="button">
+                     <a href="#" class="btn btn-dark" onclick="agregarCarrito('${zap.title}',${zap.price},'${zap.images[0]}')">Agregar a carrito</a>
+                    <button onclick="agregarFavorito('${zap.title}',${zap.price},'${zap.images[0]}')" type="button">
                     <i class="bi bi-heart"></i>
                     </button>
                 </div>
